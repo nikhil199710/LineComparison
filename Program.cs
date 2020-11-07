@@ -13,6 +13,9 @@ namespace lines
             Console.WriteLine("enter the points of another line");
             double lengthOfLineTwo = LengthofLine();
             Console.WriteLine("length of line 2 is {0}", lengthOfLineTwo);
+            ///<summary>
+            ///UC1-Taking the user input of two points to form the line.
+            /// </summary>
             double LengthofLine()
             {
                 Console.WriteLine("enter x and y coordinates of point 1");
@@ -26,7 +29,9 @@ namespace lines
                 double multiplication1 = X * X + Y * Y;
                 return Math.Round(Math.Sqrt(multiplication1), 3, MidpointRounding.AwayFromZero);
             }
-
+            ///<summary>
+            ///UC2-UC3-Comparing the length of two lines given whether they are equal(UC2) or not(UC3)
+            /// </summary>
             double comparator = lengthOfLineOne.CompareTo(lengthOfLineTwo);
             if (comparator == 1)
             {
